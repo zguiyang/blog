@@ -7,7 +7,7 @@ hero:
   tagline:  不积跬步，无以至千里；不积小流，无以成江海
   actions:
     - theme: brand
-      text: 快速开始
+      text: 开始阅读
       link: /guide/foreword
     - theme: alt
       text: Github
