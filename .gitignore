@@ -9,14 +9,9 @@ yarn-error.log
 # pnpm
 pnpm-lock.yaml
 
-# vscode
-.vscode
-
 # vuepress
 docs/.vuepress/dist
-
-# 百度链接推送
-urls.txt
+docs/.vuepress/cache
 
 # mac
 .DS_Store
