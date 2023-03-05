@@ -1,23 +1,23 @@
 export const navMenus = [
   {
     text: '前端基础',
-    link: '/front-end/html',
-    activeMatch: '/front-end/',
+    link: '/front-end/html/guide',
+    activeMatch: '/front-end',
   },
   {
     text: '服务端',
-    link: '/services/node',
+    link: '/services/node/guide',
     activeMatch: '/services/'
   },
   {
-    text: '算法',
-    link: '/leetcode/',
+    text: 'leetcode',
+    link: '/leetcode/basic/guide',
     activeMatch: '/leetcode/'
   },
   {
-    text: 'web3',
-    link: '/web3',
-    activeMatch: '/web3/'
+    text: '区块链',
+    link: '/blockchain/basic/guide',
+    activeMatch: '/blockchain'
   },
   {
     text: '框架',
@@ -31,7 +31,7 @@ export const navMenus = [
   },
   {
     text: '推荐',
-    link: '/recommend/',
+    link: '/recommend/guide',
     activeMatch: '/recommend/'
   },
 ];
@@ -44,29 +44,76 @@ export const sidebarMenus = {
       items: [
         {
           text: 'HTML',
-          link: '/front-end/html',
+          link: '/front-end/html/guide',
         },
         {
           text: 'CSS',
-          link: '/front-end/css',
+          link: '/front-end/css/guide',
         },
         {
           text: 'Javascript',
-          link: '/front-end/javascript',
+          link: '/front-end/javascript/guide',
         },
       ],
     },
   ],
   '/services/': [
     {
-      text: 'node',
+      text: '服务端',
       collapsed: true,
-      items: [],
+      items: [
+        {
+          text: 'node',
+          link: '/services/node/guide',
+        },
+      ],
     },
     {
       text: 'nginx',
       collapsed: true,
       items: [],
+    },
+  ],
+  '/leetcode/': [
+    {
+      text: '基础算法',
+      link: '/leetcode/basic/guide',
+    }
+  ],
+  '/blockchain/': [
+    {
+      text: '区块链',
+      collapsed: false,
+      items: [
+        {
+          text: '基本概念',
+          link: '/blockchain/basic/guide',
+        }
+      ],
+    },
+    {
+      text: 'web3',
+      collapsed: true,
+      items: [
+        {
+          text: '基本概念',
+          link: '/blockchain/web3/guide',
+        }
+      ],
+    },
+    {
+      text: '智能合约',
+      collapsed: false,
+      items: [
+        {
+          text: '基本概念',
+          link: '/blockchain/smart-contracts/guide',
+        },
+        {
+          text: 'Solidity',
+          link: '/blockchain/smart-contracts/solidity',
+        }
+      ],
     },
   ],
   '/framework/': [
@@ -87,23 +134,6 @@ export const sidebarMenus = {
     },
     {
       text: 'Next',
-      collapsed: true,
-      items: [],
-    },
-  ],
-  '/web3/': [
-    {
-      text: '区块链',
-      collapsed: true,
-      items: [],
-    },
-    {
-      text: '智能合约',
-      collapsed: true,
-      items: [],
-    },
-    {
-      text: '应用开发',
       collapsed: true,
       items: [],
     },
