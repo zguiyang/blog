@@ -93,12 +93,12 @@ export const sidebarMenus = {
     },
     {
       text: 'web3',
-      collapsed: true,
+      collapsed: false,
       items: [
         {
           text: '基本概念',
           link: '/blockchain/web3/guide',
-        }
+        },
       ],
     },
     {
@@ -110,8 +110,8 @@ export const sidebarMenus = {
           link: '/blockchain/smart-contracts/guide',
         },
         {
-          text: 'Solidity',
-          link: '/blockchain/smart-contracts/solidity',
+          text: '专业术语',
+          link: '/blockchain/smart-contracts/terminology',
         }
       ],
     },

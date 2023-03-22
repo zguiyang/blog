@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 
 import { navMenus, sidebarMenus } from './constant/menus';
 
+
 export default defineConfig ( {
   title: 'zguiyang Blog',
   lastUpdated: true,
